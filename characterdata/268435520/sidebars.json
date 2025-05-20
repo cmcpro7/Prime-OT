@@ -4,20 +4,6 @@
         "contentMaximized": true
     },
     "battleListsOptions": {
-        "0": {
-            "battleListFilters": [
-            ],
-            "battleListSortOrder": [
-                "byAgeAscending",
-                "byAgeAscending"
-            ],
-            "contentHeight": 38,
-            "contentMaximized": true,
-            "isPartyView": false,
-            "isPrimary": true,
-            "name": "",
-            "showFilters": false
-        },
         "253": {
             "battleListFilters": [
             ],
@@ -29,6 +15,20 @@
             "contentMaximized": true,
             "isPartyView": true,
             "isPrimary": false,
+            "name": "",
+            "showFilters": false
+        },
+        "254": {
+            "battleListFilters": [
+            ],
+            "battleListSortOrder": [
+                "byAgeAscending",
+                "byAgeAscending"
+            ],
+            "contentHeight": 38,
+            "contentMaximized": true,
+            "isPartyView": false,
+            "isPrimary": true,
             "name": "",
             "showFilters": false
         }
@@ -51,6 +51,10 @@
         "sortOrder": "ascending"
     },
     "containersOptions": {
+        "0": {
+            "contentHeight": 195,
+            "contentMaximized": true
+        }
     },
     "damageInputAnalyserWidgetOptions": {
         "contentHeight": 0,
@@ -66,7 +70,7 @@
         "contentMaximized": true
     },
     "imbuementTrackerWidgetOptions": {
-        "contentHeight": 200,
+        "contentHeight": 0,
         "contentMaximized": true,
         "showAlmostGone": true,
         "showAlmostNew": true,
@@ -88,7 +92,7 @@
     "npcTradeOptions": {
         "allowLargeTradesWithoutWarning": false,
         "allowSellingEquippedItems": false,
-        "contentHeight": 0,
+        "contentHeight": 684,
         "contentMaximized": true,
         "ignoreCapacityWhenBuying": false,
         "purchaseShoppingBagWhenBuying": false,
@@ -99,6 +103,14 @@
     "partyHuntAnalyserOptions": {
         "contentHeight": 0,
         "contentMaximized": true
+    },
+    "playerGuideWidgetOptions": {
+        "confirmedLevelSpecialPopups": [
+        ],
+        "contentHeight": 0,
+        "contentMaximized": true,
+        "pendingLevelSpecialPopups": [
+        ]
     },
     "preyWidgetOptions": {
         "contentHeight": 0,
@@ -113,8 +125,8 @@
         ]
     },
     "sidebarPanelsOptions": {
-        "chaseModeEnabled": false,
-        "combatMode": 1,
+        "chaseModeEnabled": true,
+        "combatMode": 2,
         "controlButtonsVisible": true,
         "minimapZoomLevel": 0,
         "minimizeInventory": false
@@ -125,20 +137,30 @@
             [
                 {
                     "instance": 0,
-                    "type": "battleList"
+                    "type": "container"
                 },
                 {
-                    "instance": 0,
-                    "type": "container"
+                    "type": "skills"
+                }
+            ],
+            [
+                {
+                    "type": "playerGuide"
+                },
+                {
+                    "type": "questTracker"
                 }
             ]
         ]
     },
     "skillsWidgetOptions": {
-        "contentHeight": 0,
+        "contentHeight": 200,
         "contentMaximized": true,
+        "defenceStatsVisible": true,
         "invisibleProgressBars": [
-        ]
+        ],
+        "miscStatsVisible": true,
+        "offenceStatsVisible": true
     },
     "spellListWidgetOptions": {
         "contentHeight": 0,
