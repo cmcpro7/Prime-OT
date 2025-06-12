@@ -4,6 +4,20 @@
         "contentMaximized": true
     },
     "battleListsOptions": {
+        "0": {
+            "battleListFilters": [
+            ],
+            "battleListSortOrder": [
+                "byAgeAscending",
+                "byAgeAscending"
+            ],
+            "contentHeight": 38,
+            "contentMaximized": true,
+            "isPartyView": false,
+            "isPrimary": true,
+            "name": "",
+            "showFilters": false
+        },
         "253": {
             "battleListFilters": [
             ],
@@ -15,20 +29,6 @@
             "contentMaximized": true,
             "isPartyView": true,
             "isPrimary": false,
-            "name": "",
-            "showFilters": false
-        },
-        "254": {
-            "battleListFilters": [
-            ],
-            "battleListSortOrder": [
-                "byAgeAscending",
-                "byAgeAscending"
-            ],
-            "contentHeight": 38,
-            "contentMaximized": true,
-            "isPartyView": false,
-            "isPrimary": true,
             "name": "",
             "showFilters": false
         }
@@ -92,7 +92,7 @@
     "npcTradeOptions": {
         "allowLargeTradesWithoutWarning": false,
         "allowSellingEquippedItems": false,
-        "contentHeight": 684,
+        "contentHeight": 211,
         "contentMaximized": true,
         "ignoreCapacityWhenBuying": false,
         "purchaseShoppingBagWhenBuying": false,
@@ -137,10 +137,11 @@
             [
                 {
                     "instance": 0,
-                    "type": "container"
+                    "type": "battleList"
                 },
                 {
-                    "type": "skills"
+                    "instance": 0,
+                    "type": "container"
                 }
             ],
             [
@@ -154,7 +155,7 @@
         ]
     },
     "skillsWidgetOptions": {
-        "contentHeight": 200,
+        "contentHeight": 0,
         "contentMaximized": true,
         "defenceStatsVisible": true,
         "invisibleProgressBars": [
@@ -170,6 +171,7 @@
         "showFreeSpells": true,
         "showHealingSpellGroup": true,
         "showKnightSpells": true,
+        "showMonkSpells": true,
         "showOnlyCurrentLevel": false,
         "showOnlyCurrentVocation": false,
         "showPaladinSpells": true,
